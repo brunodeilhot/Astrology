@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+$ft-family: 'Patrick Hand', cursive;
+
+$bg-pattern: repeat url(assets/background.png);
+
+$bg-color: #cdd3e3;
+$title: #cdd3e3;
+$primary: #00454f;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-family: $ft-family;
+    background: $bg-pattern;
+    font-size: 62,5%;
+    color: $primary;
+}
+
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  background: $bg-color;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}

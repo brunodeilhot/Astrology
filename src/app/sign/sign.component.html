@@ -1,0 +1,20 @@
+<div class="sign-info row" *ngFor="let sign of signs">
+
+    <div class="col-2-30">
+        <img src="./assets/{{name}}.png">
+        <p>{{sign.date_range}}</p>
+    </div>
+    <div class="col-2-70">
+        <h2>{{sign.current_date}}</h2>
+        <p>{{sign.description}}</p>
+        <h3>Feeling lucky?</h3>
+        <p>You're lucky number {{date}} is <span>{{sign.lucky_number}}</span>
+             and the best time is at <span>{{sign.lucky_time}}</span>.</p>
+        <p>And don't forget you're lucky color <span>{{sign.color}}</span>!</p>
+        <h3>When it comes to love!</h3>
+        <p>You're highest compatibility today will be with <span>{{sign.compatibility}}</span>.</p>
+        <h3>Mood for today</h3>
+        <p><span>{{sign.mood}}</span> is the way to go!</p>
+    </div>
+    
+</div>

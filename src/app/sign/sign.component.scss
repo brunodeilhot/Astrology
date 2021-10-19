@@ -1,0 +1,46 @@
+$bg-color: #cdd3e3;
+$primary: #00454f;
+
+img {
+    max-width: 160px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.sign-info {
+    background: $bg-color;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.col {
+    &-2-30 {
+        flex: 0 30%;
+        margin-right: 15px;
+        text-align: center;
+    }
+    &-2-70 {
+        flex: 0 70%;
+    }
+}
+

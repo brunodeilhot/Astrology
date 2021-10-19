@@ -1,0 +1,9 @@
+<div class="sign-list">
+    <div class="sign-avatar" *ngFor="let sign of signs; ; let i = index">
+        <img src="./assets/{{sign}}.png">
+        <div class="sign-date">
+            <button [routerLink]="['/detail']" [queryParams]="{ sign: sign,date: 'today' }">Today</button>
+            <button [routerLink]="['/detail']" [queryParams]="{ sign: sign,date: 'tomorrow' }">Tomorrow</button>
+        </div>
+    </div>
+</div>

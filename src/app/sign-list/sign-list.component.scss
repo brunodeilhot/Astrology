@@ -1,0 +1,69 @@
+$bg-color: #cdd3e3;
+$primary: #00454f;
+
+$ft-family: 'Patrick Hand', cursive;
+
+button {
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    font-family: $ft-family;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $primary;
+    min-width: 120px;
+    text-align: center;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    background: $bg-color;
+    &:first-child {
+        margin-bottom: 20px;
+    }
+    &:hover {
+        background: $primary;
+        color: $bg-color;
+    }
+}
+
+img {
+    max-width: 160px;
+}
+
+.sign-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.sign-avatar {
+    position: relative;
+    background: $bg-color;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    overflow: hidden;
+    &:hover .sign-date {
+        transform: translateY(0%);
+        transition: transform ease-out 0.3s;
+    }
+}
+
+.sign-date {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    background: $bg-color;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    transform: translateY(120%);
+    transition: transform ease-out 0.3s;
+}
