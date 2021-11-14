@@ -3,6 +3,8 @@
 This App was built as a practice project of angular's core features.
 Uses data from an api to show information about a chosen astrological sign.
 
+[Try it live](https://brunodeilhot.github.io/Astrology/)
+
 The project includes:
   - <b>Sign Service</b> uses angular's httpclient to fetch data from the api with the specified params
   - <b>App Component</b> project's root template with router-outlet
