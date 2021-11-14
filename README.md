@@ -1,27 +1,11 @@
 # AstroApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
+This App was built as a practice project of angular's core features.
+Uses data from an api to show information about a chosen astrological sign.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The project includes:
+  - <b>Sign Service</b> uses angular's httpclient to fetch data from the api with the specified params
+  - <b>App Component</b> project's root template with router-outlet
+  - <b>App Routing Module</b> uses angular's router to define the routes for each of the component
+  - <b>Sign List Component</b> displays all the astrological signs
+  - <b>Sign Component</b> displays details of the sign chosen in the List component
